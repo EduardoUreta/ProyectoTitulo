@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'home',
     'venta',
     'carrito',
+    'django_recaptcha',
 ]
 
 MIDDLEWARE = [
@@ -129,8 +130,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = reverse_lazy("Home:login")
-# LOGIN_REDIRECT_URL = reverse_lazy("Home:index") 
-    #! Necesario cuando views no redirecciona a otra URL
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
@@ -141,7 +140,12 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True 
 
+# Protección de Datos
 load_dotenv()
 
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+
+# Claves
+RECAPTCHA_PUBLIC_KEY = '6Lc7-RMpAAAAAFkDWJvme1xDA_kwTnSpTvEeCGFm'
+RECAPTCHA_PRIVATE_KEY = '6Lc7-RMpAAAAAD6BByYvJSJh6yzsUydMlQsH4-eE'
