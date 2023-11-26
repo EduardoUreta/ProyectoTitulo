@@ -58,5 +58,6 @@ class VentaProducto(models.Model):
             raise ValidationError("No puedes vender 0 productos")
         else: 
             self.producto.cantidad -= self.cantidad
+            self.producto.save()
             if self.producto.cantidad <= self.producto.umbral_minimo:
                 enviar_notificacion_stock_bajo(self.producto)

@@ -20,7 +20,7 @@ class CategoriaAdmin(admin.ModelAdmin):
 
 @admin.register(models.Productos)
 class ProductosAdmin(admin.ModelAdmin):
-    list_display = ("nombre", "precio", "cantidad","fecha_ingreso","categoria","imagen",)
+    list_display = ("nombre", "precio", "cantidad","fecha_ingreso","categoria","umbral_minimo","imagen",)
     list_display_links = ("nombre",)
     list_filter = ("nombre","precio","cantidad","fecha_ingreso","categoria",)
     search_fields = ("nombre","precio","cantidad","fecha_ingreso","categoria",)
