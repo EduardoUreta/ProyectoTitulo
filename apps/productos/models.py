@@ -17,6 +17,7 @@ class Productos(models.Model):
     cantidad = models.PositiveIntegerField(null=False)
     fecha_ingreso = models.DateField(default=timezone.now, null=False)
     categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT)
+    umbral_minimo = models.PositiveIntegerField(null=True, blank=False)
     imagen = models.ImageField(upload_to="imgprod",blank=False, null=True)
     
     def __str__(self):
