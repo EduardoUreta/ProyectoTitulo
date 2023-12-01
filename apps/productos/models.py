@@ -10,10 +10,7 @@ class Categoria (models.Model):
 
     def __str__(self):
         return self.nombre
-    
-    class Meta:
-        app_label = 'categoria'
-    
+        
 
 class Productos(models.Model):
     nombre = models.CharField(max_length=50, null=False)
@@ -27,6 +24,3 @@ class Productos(models.Model):
     def __str__(self):
         return f'{self.nombre} - ${self.precio}.'
     
-    class Meta:
-        app_label = 'productos'
-

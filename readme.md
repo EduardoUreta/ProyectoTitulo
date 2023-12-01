@@ -5,7 +5,8 @@
     Mi nombre es Eduardo Enrique Ureta Campos y es mi proyecto de título para la Universidad Andres Bello, 2023.
 
 # PARA INGRESAR
-    -Descarga el repositorio.
+    - Descarga el repositorio.
+    - instala los requirements.txt 
     - Para iniciar, el comando es python manage.py runserver
     - INICIO: http://127.0.0.1:8000/home/
     - Puedes navegar por todas las pestañas
