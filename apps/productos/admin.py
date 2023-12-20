@@ -7,9 +7,6 @@ from . import models
 
 admin.site.site_title = "Productos"
 
-# admin.site.register(models.Productos)  
-# admin.site.register(models.Categoria)
-
 @admin.register(models.Categoria)
 class CategoriaAdmin(admin.ModelAdmin):
     # Heredo varias funcionalidades para ver en el panel

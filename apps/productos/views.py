@@ -110,9 +110,9 @@ class ProductosDelete(DeleteView):
 def enviar_notificacion_stock_bajo(producto):
     subject = 'Notificación de stock bajo'
     message = f'El stock del producto {producto.nombre} ha caído por debajo del umbral mínimo.\nEl stock actual es de: {producto.cantidad} \n\n ¡Reabastece este producto!'
-    from_email = 'minimarket.lostios@gmail.com'  # Reemplaza con tu dirección de correo electrónico
-    recipient_list = ['minimarket.lostios@gmail.com']  # Reemplaza con la dirección del destinatario
+    from_email = 'minimarket.lostios@gmail.com' 
+    recipient_list = ['minimarket.lostios@gmail.com']  # Correo del destinatario
 
-    # Envía el correo electrónico
+    # Envio del correo electrónico
     send_mail(subject, message, from_email, recipient_list, fail_silently=False)
 
