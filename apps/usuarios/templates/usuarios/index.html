@@ -15,20 +15,20 @@
             <a href="{% url 'Home:register' %}">
                 <img class="img-fluid img-thumbnail rounded mx-auto d-block w-75" src="{% static 'Home/img/iconoUsuario.jpg' %}"></img>
             </a>
-            <h3 class="text-center">Apretá para crear un usuario</h3>
+            <h3 class="text-center">Crear un usuario</h3>
         </div>
         {% endif %}
         <div class="col-sm-4 col-md-4 col-lg-3 ">
             <a href="{% url 'Home:login' %}">
                 <img class="img-fluid img-thumbnail rounded mx-auto d-block w-75" src="{% static 'Home/img/iniciarSesion.png' %}"></img>
             </a>
-            <h3 class="text-center">Apretá para iniciar sesión</h3>
+            <h3 class="text-center">Iniciar sesión</h3>
         </div>
         <div class="col-sm-4 col-md-4 col-lg-3 ">
             <a href="{% url 'usuarios:buscar_usuarios' %}">
                 <img class="img-fluid img-thumbnail rounded mx-auto d-block w-75" src="{% static 'Home/img/buscarUsuario.png' %}"></img>
             </a>
-            <h3 class="text-center">Apretá para buscar un usuario</h3>
+            <h3 class="text-center">Buscar un usuario</h3>
         </div>
     </div>
 {% endblock BODY %}
