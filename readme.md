@@ -77,3 +77,18 @@
 
 **Notas Finales:**
 - Esta versión expande significativamente las capacidades de gestión de inventarios, registro de transacciones en el punto de ventas y notificación vía correo electrónico, proporcionando a los locatarios nuevas herramientas para organizar y manejar su negocio de manera más eficiente.
+
+---
+
+### Release Notes - Versión 1.1.1
+
+#### Fecha de Lanzamiento: 24 de diciembre de 2023
+
+**Nuevas Funcionalidades:**
+- **Sitio Web con Renderización de Productos y Categorías:** Ahora el sistema muestra los productos y categorías almacenados en la base de datos en el sitio web.
+- **Creación de Carrito de Reserva de Pedidos:** Implementación de un carrito que permite reservar pedidos, mostrando subtotal y total de la compra.
+- **Verificación con reCaptcha:** Se ha añadido la verificación con reCaptcha para una capa adicional de seguridad.
+- **Envío de Alerta Automática por Umbral Mínimo:** Si un producto alcanza su umbral mínimo, se enviará una alerta automática.
+
+**Notas Finales:**
+Esta versión introduce un sitio web funcional con visualización de productos y categorías desde la base de datos. Además, facilita a los usuarios la reserva de pedidos con un carrito que muestra los totales. Se ha reforzado la seguridad con la verificación mediante reCaptcha y se implementa la alerta automática cuando un producto desciende por debajo o iguala el umbral mínimo. En versiones futuras, se planea mejorar las vistas y agregar la gestión de usuarios, así como la integración de portales de pagos para una experiencia más completa y versátil.
